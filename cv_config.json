@@ -1,0 +1,15 @@
+{
+  "backend": "advanced_auto",
+  "embedding_model": "openai/clip-vit-base-patch32",
+  "enable_ocr": true,
+  "enable_yolo": false,
+  "yolo_weights": "models/logo_detector.pt",
+  "weights": {
+    "embedding_anomaly": 0.45,
+    "structural_anomaly": 0.25,
+    "ocr_anomaly": 0.15,
+    "quality_anomaly": 0.15
+  },
+  "notes": "advanced_auto uses CLIP/OCR when installed and a deterministic local fallback otherwise. A custom YOLO logo detector can be enabled after training."
+}
+
